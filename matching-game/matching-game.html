@@ -28,15 +28,13 @@
 
             theBody.onclick = function gameOver() {
                 alert("Game Over!\n\nYou found " + foundFaces + " faces!");
-                theBody.onclick = null;
+                //theBody.onclick = null;
                 theLeftSide.lastChild.onclick = null;
                 removeFaces(theLeftSide);
                 numberOfFaces = 5;
                 foundFaces = 0;
                 generateFaces();
             }
-
-
 
             function generateFaces() {
                 for (var i = 0; i<numberOfFaces; i++){
